@@ -1,0 +1,15 @@
+export const categories = [
+  "All",
+  "Football",
+  "Volleyball",
+  "Basketball",
+  "Baseball",
+  "Soccer",
+  "Tennis",
+  "Softball",
+  "Track",
+  "Hockey",
+  "Swimming",
+  "Wrestling",
+  "Cricket",
+];
