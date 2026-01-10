@@ -52,7 +52,7 @@ const Contact = () => {
   };
 
   return (
-    <div className=" border-t md:my-5 md:py-5">
+    <div className="border-t md:my-5 md:py-5">
       <section className="w-screen md:w-full h-full shadow-sm rounded-md">
         <div className="pt-3">
           <h1 className="text-center text-3xl font-medium text-slate-600">

@@ -10,7 +10,7 @@ import { FcGoogle } from "react-icons/fc";
 
 const Footer = () => {
   return (
-    <div className="w-screen md:w-full md:h-[320px] bg-[#EEEEEE] p-5 mt-2">
+    <div className=" md:h-[320px] bg-[#EEEEEE] p-5 mt-2">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-3 sm:grid-cols-2">
         <div className="m-auto">
           <h1 className="text-bold text-2xl mb-5">Navigation Links </h1>

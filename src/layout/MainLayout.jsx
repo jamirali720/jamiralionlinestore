@@ -8,7 +8,7 @@ const MainLayout = () => {
   const location = useLocation();
 
   return (
-    <div className="w-full max-w-full">
+    <div className="w-screen md:w-full">
       <Navbar />
       {location.pathname === "/" && <Carousel />}
       <main>

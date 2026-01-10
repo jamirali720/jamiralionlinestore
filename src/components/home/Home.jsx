@@ -14,7 +14,7 @@ import LatestProducts from "./LatestProducts";
 import { Button } from "antd";
 import MetaData from "../MetaData/MetaData";
 import { useDispatch, useSelector } from "react-redux";
-import { motion } from "motion";
+import { motion } from "framer-motion";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -51,20 +51,9 @@ const Home = () => {
           <Spinner />
         </div>
       ) : (
-        <div className="bg-[#FFFFFF] px-2">
-          <section className="my-10">
-            <motion.h1
-              animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
-              transition={{
-                duration: 5,
-                delay: 0.3,
-                ease: [0.5, 0.71, 1, 1.5],
-              }}
-              initial={{ opacity: 0, scale: 0.5 }}
-              className="text-start text-3xl font-bold"
-            >
-              Latest Features Products
-            </motion.h1>
+        <div className="bg-[#ffffff]  px-2  mx-auto  ">
+          <section className="">
+            <h1 className="text-3xl font-bold text-center">Latest Features Products</h1>
             <LatestProducts />
           </section>
           <div className="w-full  p-3 mx-auto my-4">
@@ -104,7 +93,7 @@ const Home = () => {
                   <ProductCard key={index} product={product}></ProductCard>
                 ))}
             </div>
-            <section className="w-full h-auto p-4 mx-1">
+            <section className="md:w-full w-screen h-auto p-4 mx-1">
               {data?.data && (
                 <Pagination
                   products={data?.data}

@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 import { FaShoppingCart } from "react-icons/fa";
 
-
 import { cartItems } from "../redux/features/cartSlice";
 import { useSelector } from "react-redux";
 
@@ -13,9 +12,10 @@ const Navbar = () => {
     (acc, item) => acc + item.quantity,
     0
   );
-
+//fixed z-50
+  
   return (
-    <div className="bg-[#EEEEEE] w-screen md:w-full h-auto md:h-[80px] flex justify-center  justify-items-center px-5 mb-1">
+    <div className="fixed z-10 w-screen md:w-full h-auto  md:h-[80px] flex justify-center  justify-items-center px-5  bg-[#eeeded] mb-1">
       <div className="flex w-full h-full justify-between items-center">
         <div className="bg-[#FFFFFF] rounded-md  hidden md:block">
           {/* <img src={image} alt="sports" className="size-16 rounded-full" /> */}
@@ -23,7 +23,7 @@ const Navbar = () => {
             to="/"
             className="block text-2xl text-[#434343] font-bold cursor-pointer  p-3 mb-1 hover:text-[#F45634] duration-300 ease-in-out"
           >
-           Sporting Store
+            Online Shopping Store
           </Link>
         </div>
 
@@ -53,7 +53,7 @@ const Navbar = () => {
                 >
                   About Us
                 </Link>
-              </li>             
+              </li>
               <li>
                 <Link
                   to="/cart"

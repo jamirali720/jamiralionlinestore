@@ -45,10 +45,10 @@ const LatestProducts = () => {
                 animate={{ rotate: [0, 90, 90, 0], scale: [1, 0.5, 0.75, 1] }}
                 key={index}
               >
-                <Card className="w-full max-w-full h-[450px] rounded-sm mx-auto border  border-[#E7E7E7]">
+                <Card className="w-full max-w-full h-[600px] rounded-sm mx-auto border  border-[#E7E7E7]">
                   <div className="flex justify-center justify-items-center">
-                    <div className="w-full h-full p-1 ">
-                      <div className="w-full h-56 overflow-hidden">
+                    <div className="w-full h-full">
+                      <div className="w-full h-[22vmax] overflow-hidden">
                         <img
                           src={product?.image?.url}
                           alt={product.name}
@@ -62,7 +62,7 @@ const LatestProducts = () => {
                         <h3 className="text-start font-bold text-green-700">
                           $ {product.price}
                         </h3>
-                        <div className="md:flex justify-between justify-items-center gap-1 my-2">
+                        <div className="md:flex justify-between justify-items-center gap-1">
                           <Rate
                             allowHalf
                             count={5}

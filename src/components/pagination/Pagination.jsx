@@ -26,9 +26,9 @@ const Pagination = ({
           of <strong>{products.length}</strong> products
         </span>
       </div>
-      <div className=" w-full md:h-3/4 h-14  md:flex justify-end justify-items-center ">
-        <div className="text-center md:text-end px-4  w-full md:w-18 h-10 ">
-          <span> Show : </span>
+      <div className=" w-full md:h-3/4 h-14  md:flex justify-end justify-items-center">
+        <div className="text-center md:text-end px-4 h-10 md:flex ">
+          <span className="my-auto"> Show : </span>
           <select
             value={itemPerPage}
             onChange={(event) => setItemPerPage(Number(event.target.value))}
@@ -41,7 +41,7 @@ const Pagination = ({
             ))}
           </select>
         </div>
-        <div className="text-center  md:text-end px-4 mb-2 w-full md:w-18 h-10 my-3 sm:my-0">
+        <div className="text-center  md:text-end px-4 mb-2  h-10 my-3 sm:my-0 md:flex  ">
           <Button
             onClick={() => {
               if (currentPage > 1) {
@@ -49,7 +49,7 @@ const Pagination = ({
               }
             }}
             disabled={currentPage === 1}
-            className="p-5 mx-2"
+            className="p-5 mx-2 my-auto"
           >
             Prev
           </Button>
@@ -60,7 +60,7 @@ const Pagination = ({
               }
             }}
             disabled={totalPages === currentPage}
-            className="p-5 mx-2"
+            className="p-5 mx-2 my-auto"
           >
             Next
           </Button>
