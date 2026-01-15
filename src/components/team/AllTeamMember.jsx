@@ -133,9 +133,9 @@ const AllTeamMember = () => {
                 </tbody>
               </table>
             </div>
-            <div className=" w-full h-14 flex justify-end justify-items-center my-5">
-              <div className="text-end px-4 w-18 h-10 ">
-                <span> Show : </span>
+            <div className=" w-full h-14 flex justify-end justify-items-center my-5 gap-x-2">
+              <div className="text-end px-4  h-10 flex justify-center justify-items-center gap-x-2 mx-4">
+                <span className="my-auto"> Show : </span>
                 <select
                   value={itemPerPage}
                   onChange={(event) =>
@@ -150,7 +150,7 @@ const AllTeamMember = () => {
                   ))}
                 </select>
               </div>
-              <div className="text-end px-4 mb-2 w-18 h-10">
+              <div className="text-end px-4 mb-2 w-18 h-10 flex justify-center justify-items-center gap-x-2 mx-8">
                 <button
                   onClick={() => {
                     if (currentPage > 1) setCurrentPage(currentPage - 1);
