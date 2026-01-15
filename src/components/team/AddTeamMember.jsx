@@ -66,7 +66,7 @@ const AddTeamMember = () => {
           <Spinner />
         </div>
       ) : (
-        <div className="bg-[#FFFFFF] w-full h-max-screen rounded-md ">
+        <div className="bg-[#FFFFFF] md:py-40 py-12 w-full h-max-screen rounded-md flex justify-center justify-items-center">
           <Card
             title="Add Team Member"
             className="bg-[#F9F9F9] w-screen  md:mx-auto  md:w-1/2 max-h-full  rounded-md px-4"

@@ -29,7 +29,7 @@ const Navbar = () => {
 
         <div>
           <nav>
-            <ul className="md:flex justify-center justify-items-center ml-10 md:ml-0 md:space-x-5 ">
+            <ul className="md:flex justify-center justify-items-center ml-10 md:ml-0 md:space-x-5">
               <li>
                 <Link
                   to="/products"
